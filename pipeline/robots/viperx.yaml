@@ -1,0 +1,13 @@
+# Trossen ViperX 300s, paper Table 3: 6 DOF, gripper 15-87 mm, reach 0.911 m.
+name: viperx
+mjcf: trossen_vx300s/vx300s.xml
+base_body: base_link
+wrist_body: gripper_link
+jaw_bodies: [left_finger_link, right_finger_link]
+arm_joints: [waist, shoulder, elbow, forearm_roll, wrist_angle, wrist_rotate]
+# The pads are inset: each finger travels 21-57 mm for a 15-87 mm opening.
+gripper_joints: [left_finger, right_finger]
+gripper_signs: [1.0, -1.0]
+gripper_range_mm: [15.0, 87.0]
+home_key: home
+reach_m: 0.911

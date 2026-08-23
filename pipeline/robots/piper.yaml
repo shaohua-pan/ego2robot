@@ -1,0 +1,12 @@
+# AgileX Piper, paper Table 3: 6 DOF, gripper 0-70 mm, reach 0.883 m.
+name: piper
+mjcf: agilex_piper/piper.xml
+base_body: base_link
+wrist_body: link6
+jaw_bodies: [link7, link8]
+arm_joints: [joint1, joint2, joint3, joint4, joint5, joint6]
+gripper_joints: [joint7, joint8]
+gripper_signs: [1.0, -1.0]
+gripper_range_mm: [0.0, 70.0]
+home_key: home
+reach_m: 0.883

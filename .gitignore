@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# MuJoCo writes this next to the working directory.
+MUJOCO_LOG.TXT
+
+# Third-party repositories are cloned, not vendored (see README).
+third_party/
+*.zip
+__MACOSX/
+
+# Paper copies and scraped text used while implementing; not ours to redistribute.
+*.pdf
+agent-tools/
+
+# Large files live under $EGO2ROBOT_STORE, but catch stray local runs too.
+outputs/
+*.h5
+*.mp4
+*.npz
+*.pth
+*.ckpt

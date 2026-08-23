@@ -1,0 +1,14 @@
+# ARX L5, paper Table 3: 6 DOF, gripper 0-88 mm, reach 0.855 m. This is the
+# morphology the paper's single-morphology ablation uses.
+name: arx_l5
+mjcf: arx_l5/arx_l5.xml
+base_body: base_link
+wrist_body: link6
+jaw_bodies: [link7, link8]
+arm_joints: [joint1, joint2, joint3, joint4, joint5, joint6]
+# joint8 mirrors joint7, so its qpos is negated.
+gripper_joints: [joint7, joint8]
+gripper_signs: [1.0, -1.0]
+gripper_range_mm: [0.0, 88.0]
+home_key: home
+reach_m: 0.855

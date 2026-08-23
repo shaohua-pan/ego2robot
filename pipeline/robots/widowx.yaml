@@ -1,0 +1,13 @@
+# Trossen WidowX 250s, paper Table 3: 6 DOF, gripper 11-55 mm, reach 0.787 m.
+# This model prefixes every body name with "wx250s/".
+name: widowx
+mjcf: trossen_wx250s/wx250s.xml
+base_body: wx250s/base_link
+wrist_body: wx250s/gripper_link
+jaw_bodies: [wx250s/left_finger_link, wx250s/right_finger_link]
+arm_joints: [waist, shoulder, elbow, forearm_roll, wrist_angle, wrist_rotate]
+gripper_joints: [left_finger, right_finger]
+gripper_signs: [1.0, -1.0]
+gripper_range_mm: [11.0, 55.0]
+home_key: home
+reach_m: 0.787

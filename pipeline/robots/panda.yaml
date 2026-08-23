@@ -1,0 +1,13 @@
+# Franka Emika Panda, paper Table 3: 7 DOF, gripper 0-80 mm, reach 1.272 m.
+name: panda
+mjcf: franka_emika_panda/panda.xml
+base_body: link0
+wrist_body: hand
+jaw_bodies: [left_finger, right_finger]
+arm_joints: [joint1, joint2, joint3, joint4, joint5, joint6, joint7]
+# Both fingers open in the same direction in their own frames, so both take +w/2.
+gripper_joints: [finger_joint1, finger_joint2]
+gripper_signs: [1.0, 1.0]
+gripper_range_mm: [0.0, 80.0]
+home_key: home
+reach_m: 1.272
